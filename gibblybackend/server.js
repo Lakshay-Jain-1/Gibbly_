@@ -67,7 +67,7 @@ app.get("/pdf", async (req, res) => {
     doc = new PDFDocument();
 
     doc.pipe(
-      fs.createWriteStream("../React_projects/Gibbly/public/output.pdf")
+      fs.createWriteStream("../Gibbly/public/output.pdf")
     ); // would have to change the path
 
     doc.fontSize(35).text(title, {
